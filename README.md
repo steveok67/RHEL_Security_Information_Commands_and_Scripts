@@ -18,10 +18,12 @@ $ sudo dnf updateinfo list all --with-cve |egrep CVE
 $ curl -s https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2026-23001 |grep -e "\"name\" :" -e cvss3_base_score
 
 9) If you want to print all the Security Advisories (SAs), associated CVEs per SA, and the corresponding CVSS score for each CVE, run the following script: \
+// Thanks to Gordon Keegan at Red Hat \
 $ chmod +x ./get_SA_CVEs_CVSS_scores.sh \
 $ ./get_SA_CVEs_CVSS_scores.sh
 
-10) If want all the information from the above script, and also the affected package run the following script: \
+11) Print a condensed summary of the release update, including updated packages, SAs, CVEs, CVSS scores. \
+// Thanks to Tim Runion at DTV \
 $ chmod +x ./get_rhel_errata_score.sh \
 $ ./get_rhel_errata_score.sh
 
