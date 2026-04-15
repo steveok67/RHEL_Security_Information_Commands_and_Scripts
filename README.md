@@ -1,9 +1,10 @@
 Scope: The purpose of this repo is to easily gather security information on RHEL. 
 - The same DNF commands may also work on other RPM-based distributions. 
-- However, other RPM-based distributions often run older kernel and package versions, 
-  so the Security patch level will be different. 
+- However, other RPM-based distributions may be running older kernel and package versions, 
+  so the Security patch level may be different. 
 - Moreover, the supplied scripts, which query the Red Hat CVE database, will be unique 
-  to that RHEL version specifically, and won't likely match other RPM distributions. 
+  to that RHEL version specifically, and won't match other RPM-based distributions if \
+  they are using different kernel/package versions. 
 - We hope the included scripts are helpful, but they are not supported by Red Hat. 
 
 This readme and included scripts are intended to help with the following questions: 
