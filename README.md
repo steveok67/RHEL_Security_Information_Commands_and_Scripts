@@ -1,4 +1,5 @@
 Scope: The purpose of this repo is to easily gather security information on RHEL. 
+- This should all work on RHEL 8, 9, and 10, but not 7.
 - The same DNF commands may also work on other RPM-based distributions. 
 - However, other RPM-based distributions may be running older kernel and package versions, 
   so the Security patch level may be different. 
